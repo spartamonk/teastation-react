@@ -98,14 +98,14 @@ export const services = [
   {
     id: 2,
     title: 'home delivery',
-    image: gingerTea,
+    image: fruitSangria,
     icon: <FaHome />,
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione labore sed deserunt, blanditiis error doloremque.',
   },
   {
     id: 3,
     title: 'tea aging',
-    image: gingerTea,
+    image: whiteTea,
     icon: <FaMugHot />,
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione labore sed deserunt, blanditiis error doloremque.',
   },
