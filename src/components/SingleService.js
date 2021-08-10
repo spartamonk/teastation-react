@@ -11,7 +11,7 @@ const SingleService = ({image, icon, text, title}) => {
      <div className='service-info'>
        <h4 className='service-title'>{title}</h4>
        <p className='service-text'>{text}</p>
-       <Link to='/service' className='btn service-btn'>
+       <Link to='/services' className='btn service-btn'>
          read more
        </Link>
      </div>
