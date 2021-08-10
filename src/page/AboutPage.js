@@ -1,15 +1,18 @@
-import React from 'react'
-import {Navbar, Banner, About, Footer} from '../components'
+import React, { useEffect } from 'react'
+import { Navbar, Banner, About, Footer } from '../components'
 
 const AboutPage = () => {
- return (
-  <>
-   <Navbar />
-   <Banner/>
-   <About/>
-   <Footer/>
-  </>
- )
+  useEffect(() => {
+    document.title = 'Tea Station || About'
+  }, [])
+  return (
+    <>
+      <Navbar />
+      <Banner />
+      <About />
+      <Footer />
+    </>
+  )
 }
 
 export default AboutPage
