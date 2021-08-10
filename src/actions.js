@@ -1,0 +1,2 @@
+export const NAVBAR_OPEN = 'SIDEBAR_OPEN'
+export const NAVBAR_CLOSE = 'SIDEBAR_CLOSE'
