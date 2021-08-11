@@ -2,9 +2,12 @@ import React from 'react'
 import {products} from '../utils/constants'
 import SingleProduct from './SingleProduct'
 import {Link} from 'react-router-dom'
+import { useGlobalContext } from '../context/context'
+
 const Products = () => {
+  const { closeNavbar } = useGlobalContext()
  return (
-   <section className='products'>
+   <section className='products' onClick={closeNavbar}>
      <div className='section-center clearfix'>
        <article className='products-info'>
          <div className='section-title'>

@@ -1,8 +1,10 @@
 import React from 'react'
 import { socials } from '../utils/constants'
+import { useGlobalContext } from '../context/context'
 const Footer = () => {
+  const { closeNavbar } = useGlobalContext()
  return (
-   <section className='footer'>
+   <section className='footer' onClick={closeNavbar}>
      <div className='section-center'>
        <div className='social-icons'>
          {socials.map((social) => {

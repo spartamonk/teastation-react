@@ -1,10 +1,12 @@
 import React from 'react'
 import aboutBcg from '../assets/about-bcg.jpeg'
 import {Link} from 'react-router-dom'
+import { useGlobalContext } from '../context/context'
 
 const About = () => {
+  const { closeNavbar } = useGlobalContext()
   return (
-    <section className='about'>
+    <section className='about' onClick={closeNavbar}>
       <div className='section-center  clearfix'>
         <article className='about-img'>
           <div className='about-picture-container'>

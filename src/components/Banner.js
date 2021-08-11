@@ -1,10 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
+import { useGlobalContext } from '../context/context'
 const Banner = () => {
+const {closeNavbar} = useGlobalContext()
  return (
    <>
-     <header className='header'>
+     <header className='header' onClick={closeNavbar}>
        <div className='banner'>
          <h2>over one hundred flavors of</h2>
          <h1>
@@ -15,7 +16,7 @@ const Banner = () => {
          </Link>
        </div>
      </header>
-     <div className="content-divider"></div>
+     <div className='content-divider'></div>
    </>
  )
 }

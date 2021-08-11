@@ -1,8 +1,10 @@
 import React from 'react'
 import {skills} from '../utils/constants'
+import { useGlobalContext } from '../context/context'
 const Skills = () => {
+ const { closeNavbar } = useGlobalContext()
  return (
-  <section className="skills clearfix">
+  <section className="skills clearfix" onClick={closeNavbar}>
    {
     skills.map(skill=> {
      const {id, icon,title, text} = skill;

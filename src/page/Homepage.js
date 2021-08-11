@@ -10,6 +10,7 @@ import {
   Skills,
 } from '../components'
 const Homepage = () => {
+  
   useEffect(() => {
     document.title = 'Tea Station || Home'
   }, [])
